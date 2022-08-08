@@ -6,12 +6,12 @@ export default function InfoCard({ repos }) {
 
         <div>
 
-            <ul>
-                <li>{repos.name}</li>
-                <li>{repos.description}</li>
-                <li>{repos.language}</li>
 
-            </ul>
+            <li>{repos.name}</li>
+            <li>{repos.description}</li>
+            <li>{repos.language}</li>
+
+
 
         </div>
     )
