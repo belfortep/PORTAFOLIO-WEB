@@ -2,6 +2,11 @@ import React from 'react'
 import './notFoundPage.css'
 export default function NotFoundPage() {
     return (
-        <div>NotFoundPage</div>
+        <>
+            <div>
+                <h2>404 Page Not Found</h2>
+            </div>
+
+        </>
     )
 }
