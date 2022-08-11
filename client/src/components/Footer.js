@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './footer.css'
 
 export default function Footer() {
@@ -14,7 +15,9 @@ export default function Footer() {
                         </ul>
                         <ul>
                             <li>
-                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga accusantium architecto est adipisci. Tempora alias placeat earum beatae. Sed obcaecati itaque culpa hic quam accusamus at consequatur doloremque explicabo natus?</span>
+                                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga accusantium architecto est adipisci. Tempora alias placeat earum beatae. Sed obcaecati itaque culpa hic quam accusamus at consequatur doloremque explicabo natus?
+                                    <Link to={'/attributions'} ><span>Attributions</span></Link>
+                                </span>
                             </li>
                         </ul>
                         <ul>

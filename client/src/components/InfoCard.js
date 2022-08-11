@@ -4,6 +4,9 @@ import Moment from 'react-moment'
 import moment from 'moment';
 export default function InfoCard({ repos }) {
 
+
+
+
     const onClick = () => {
         window.open(repos.clone_url)
     }
@@ -28,11 +31,11 @@ export default function InfoCard({ repos }) {
                     </p>
                     <div className='cardFooter'>
                         <div className='cardFooterImage'>
-                            <img className='cardSmallImage'></img>{/*poner imagen dependiendo de lenguaje*/}
+                            <img className='cardSmallImage' src={require(`../static/images/${repos.language}.png`)}></img>
                         </div>
                     </div>
-                    <span className='cardFooterText'>Ultima actualización: <Moment date={moment(repos.updated_at)} format='DD/MM/YYYY' /></span>
                 </div>
+                <span className='cardFooterText'>última actualización: <Moment date={moment(repos.updated_at)} format='DD/MM/YYYY' /></span>
             </div>
         </>
     )
