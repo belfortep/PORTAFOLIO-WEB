@@ -19,12 +19,72 @@
   border-radius: 0.5rem;
   font-size: larger;
 }
+.cardHeader {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
 
+.cardHeaderContainer {
+  text-align: left;
+}
+
+.cardHeaderText {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  align-items: center;
+  display: flex;
+}
+
+.cardBodyText {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
+  height: 60%;
+}
 .cardTitleText {
   font-weight: bolder;
 }
+
+.cardFooter {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
 .cardFooterImage {
+  column-gap: 0.5rem;
+  align-items: center;
+  display: flex;
 }
 
 .cardSmallImage {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  padding: 0.25rem;
+  max-width: 100%;
+}
+
+.cardFooterText {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  --tw-bg-opacity: 1;
+  background-color: #444;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.cardBody {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }

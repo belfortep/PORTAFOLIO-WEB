@@ -18,6 +18,8 @@ export default function Attributions() {
             <a href="https://commons.wikimedia.org/wiki/File:Go_Logo_Blue.svg">The Go Authors</a>, Public domain, via Wikimedia Commons
             <br></br>
             <a href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg">Chris Williams</a>, Public domain, via Wikimedia Commons
+            <br></br>
+            <a href="https://commons.wikimedia.org/wiki/File:Code.svg">Dave Braunschweig</a>, CC0, via Wikimedia Commons
 
         </div>
     )

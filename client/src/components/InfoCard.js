@@ -10,6 +10,16 @@ export default function InfoCard({ repos }) {
     const onClick = () => {
         window.open(repos.clone_url)
     }
+    let smallImage
+    try {
+        smallImage = require(`../static/images/${repos.language}.png`)
+    } catch (err) {
+        console.log(err);
+    }
+
+    if (!smallImage) {
+        smallImage = require('../static/images/Code.png')
+    }
 
 
     return (
@@ -20,22 +30,24 @@ export default function InfoCard({ repos }) {
                 <div className='cardTitle'>
                     <span className='cardTitleText'>{repos.name}</span>
                 </div>
-                <div>
+                <div className='cardBody'>
                     <header className='cardHeader'>
                         <div className='cardHeaderContainer'>
                             <h3 className='cardHeaderText'>{repos.language}</h3>
                         </div>
                     </header>
-                    <p className='cardBody'>
+                    <p className='cardBodyText'>
                         {repos.description || "missing description"}
                     </p>
                     <div className='cardFooter'>
                         <div className='cardFooterImage'>
-                            <img className='cardSmallImage' src={require(`../static/images/${repos.language}.png`)}></img>
+                            <img className='cardSmallImage' src={smallImage}></img>
                         </div>
+                        <span className='cardFooterText'>Última actualización: <Moment date={moment(repos.updated_at)} format='DD/MM/YYYY' /></span>
                     </div>
+
                 </div>
-                <span className='cardFooterText'>última actualización: <Moment date={moment(repos.updated_at)} format='DD/MM/YYYY' /></span>
+
             </div>
         </>
     )
