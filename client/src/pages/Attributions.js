@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Attributions() {
+export default function Attributions({ user }) {
     return (
         <div>
 

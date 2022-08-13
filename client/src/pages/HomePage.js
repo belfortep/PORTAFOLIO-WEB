@@ -5,11 +5,9 @@ import useFetch from '../hooks/useFetch'
 import './homePage.css'
 
 
-export default function HomePage() {
+export default function HomePage({ user }) {
 
     const repos = useFetch('https://api.github.com/users/belfortep/repos');
-
-    const user = useFetch('https://api.github.com/users/belfortep');
 
     console.log(repos.data);
 
@@ -17,15 +15,27 @@ export default function HomePage() {
 
         <>
 
-            <h2>{user.data.name}</h2>
-            <h3>{user.data.bio}</h3>
-
-            <img src={user.data.avatar_url} />
+            <section>
+                <div className='sectionContainer'>
+                    <div className='sectionGridContainer'>
+                        <div>
+                            <h1 className='sectionTitle'>{user.name}</h1>
+                            <p className='sectionText'>{user.bio}</p>
+                        </div>
+                        <div>
+                            <div className='sectionImageContainer'>
+                                <img className='sectionImage' src={user.avatar_url} alt='Imagen de perfil de Paolo Belforte'></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section>
                 <div>
                     <div>
                         <h2>Repositorios</h2>
+                        <span>Un listado de mis trabajos publicos</span>
                     </div>
                     <div className='cardContainer'>
                         {repos.data.map((repos, index) => (
@@ -35,7 +45,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <Footer />
+            <Footer user={user} />
         </>
     )
 }

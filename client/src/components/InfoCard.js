@@ -4,27 +4,31 @@ import Moment from 'react-moment'
 import moment from 'moment';
 export default function InfoCard({ repos }) {
 
-
-
-
     const onClick = () => {
+
         window.open(repos.clone_url)
+
     }
+
     let smallImage
+
     try {
+
         smallImage = require(`../static/images/${repos.language}.png`)
+
     } catch (err) {
+
         console.log(err);
     }
 
     if (!smallImage) {
+
         smallImage = require('../static/images/Code.png')
+
     }
 
 
     return (
-
-
         <>
             <div className='card' onClick={onClick}>
                 <div className='cardTitle'>
