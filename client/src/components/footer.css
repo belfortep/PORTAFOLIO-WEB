@@ -31,3 +31,24 @@
 .gridElement {
   text-align: justify;
 }
+
+.gridInnerElement {
+  border: 1px solid #777;
+  background-color: #444;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 20rem;
+}
+@media (max-width: 800px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.gridTextElement {
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}

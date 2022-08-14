@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer';
 import InfoCard from '../components/InfoCard'
 import useFetch from '../hooks/useFetch'
+import { LinearProgress } from '@mui/material'
 import './homePage.css'
 
 
@@ -30,8 +31,7 @@ export default function HomePage({ user }) {
                     </div>
                 </div>
             </section>
-
-            <section>
+            {repos.loading ? <div className='linearProgress'><LinearProgress color='inherit' /></div> : <section>
                 <div>
                     <div>
                         <h2>Repositorios</h2>
@@ -43,7 +43,7 @@ export default function HomePage({ user }) {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section>}
 
             <Footer user={user} />
         </>

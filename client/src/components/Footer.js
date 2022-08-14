@@ -9,20 +9,21 @@ export default function Footer({ user }) {
                 <div className='footerUpContainer'>
                     <div className='gridContainer'>
                         <ul className='gridElement'>
-                            <li>
+                            <li className='gridInnerElement'>
                                 <span><Link to={'/social'}>Redes sociales</Link></span>
                             </li>
-                            <li>
+                            <li className='gridInnerElement'>
                                 <span>pbelforte2003@gmail.com</span>
                             </li>
-                            <li>
-                                <span>Uso de imagenes: <Link to={'/attributions'} ><span>Attributions</span></Link></span>
+                            <li className='gridInnerElement'>
+                                <span><Link to={'/attributions'} ><span>Attributions</span></Link></span>
                             </li>
                         </ul>
                         <ul className='gridElement'>
-                            <li>
+                            <li className='gridTextElement'>
                                 <span>{user.bio}</span>
                             </li>
+
                         </ul>
 
                     </div>

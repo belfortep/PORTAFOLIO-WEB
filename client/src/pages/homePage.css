@@ -31,3 +31,10 @@
   border-width: 0.125rem;
   border-radius: 0.375rem;
 }
+
+.linearProgress {
+  color: darkred;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
