@@ -1,0 +1,55 @@
+.socialCardGrid {
+  padding: 1rem;
+  background-color: #121212;
+  border-radius: 0.5rem;
+}
+
+.socialCard {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.socialCardImageContainer {
+  padding: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.socialCardImage {
+  object-fit: contain;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.socialCardInfoContainer {
+  padding-left: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.socialCardInfoTitle {
+  font-weight: bold;
+}
+
+.socialCardInfoText {
+  --tw-text-opacity: 1;
+  color: #aaa;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-right: 0.5rem;
+}
+
+.socialCardInfoVisit {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0.25rem;
+}

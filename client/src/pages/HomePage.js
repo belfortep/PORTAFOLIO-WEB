@@ -4,6 +4,7 @@ import InfoCard from '../components/InfoCard'
 import useFetch from '../hooks/useFetch'
 import { LinearProgress } from '@mui/material'
 import './homePage.css'
+import Header from '../components/Header';
 
 
 export default function HomePage({ user }) {
@@ -15,6 +16,7 @@ export default function HomePage({ user }) {
     return (
 
         <>
+            <Header />
 
             <section>
                 <div className='sectionContainer'>

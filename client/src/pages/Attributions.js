@@ -1,9 +1,11 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import './attributions.css'
 export default function Attributions({ user }) {
     return (
         <>
+            <Header />
             <div className='attributionsContainer'>
                 <a href="https://commons.wikimedia.org/wiki/File:Csharp_Logo.png">Andres15alvarez</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
                 <br></br>
