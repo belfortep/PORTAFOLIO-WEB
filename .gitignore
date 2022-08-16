@@ -1,1 +1,3 @@
 /client/src/static
+.env
+node_modules

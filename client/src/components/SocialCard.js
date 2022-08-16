@@ -1,6 +1,7 @@
 import React from 'react'
 import './socialCard.css'
 export default function SocialCard({ socialNetwork }) {
+
     return (
         <>
             <div className='socialCardGrid'>
