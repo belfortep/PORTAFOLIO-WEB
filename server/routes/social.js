@@ -7,4 +7,5 @@ router.get('/', socialController.getAllSocial);
 
 
 
+
 module.exports = router

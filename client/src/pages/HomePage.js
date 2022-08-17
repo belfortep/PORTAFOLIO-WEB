@@ -11,8 +11,6 @@ export default function HomePage({ user }) {
 
     const repos = useFetch('https://api.github.com/users/belfortep/repos');
 
-    console.log(repos.data);
-
     return (
 
         <>

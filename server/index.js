@@ -1,7 +1,6 @@
 //------------------------------REQUIRE------------------------------
 const express = require('express');
 const app = express();
-const cors = require('cors');
 const { join } = require('path');
 const { connectDB } = require('./db/db');
 const dotenv = require('dotenv')
@@ -16,7 +15,6 @@ app.set('port', process.env.PORT || 4000);
 //------------------------------MIDDLEWARES------------------------------
 
 app.use(express.json());
-app.use(cors());
 
 //------------------------------DB------------------------------
 
@@ -26,9 +24,13 @@ connectDB();
 
 app.use('/api/social', socialRoutes);
 
-//------------------------------SERVER------------------------------
+app.use('/static', express.static(join(__dirname, '../client/build//static')));
 
-app.use(express.static(join(__dirname, '../client/build')))
+app.get('*', function (req, res) {
+    res.sendFile('index.html', { root: join(__dirname, '../client/build/') });
+});
+
+//------------------------------SERVER------------------------------
 
 
 app.listen(app.get('port'), () => {

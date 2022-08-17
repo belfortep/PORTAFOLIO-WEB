@@ -24,6 +24,12 @@ export default function Attributions({ user }) {
                 <br></br>
                 <a href="https://commons.wikimedia.org/wiki/File:Code.svg">Dave Braunschweig</a>, CC0, via Wikimedia Commons
                 <br></br>
+                <a href="https://commons.wikimedia.org/wiki/File:Instagram_logo_2022.svg">Instagram</a>, Public domain, via Wikimedia Commons
+                <br></br>
+                <a href="https://commons.wikimedia.org/wiki/File:Linkedin_icon.svg">ZyMOS-Bot</a>, CC0, via Wikimedia Commons
+                <br></br>
+                <a href="https://commons.wikimedia.org/wiki/File:Octicons-mark-github.svg">GitHub</a>, <a href="http://opensource.org/licenses/mit-license.php">MIT</a>, via Wikimedia Commons
+                <br></br>
                 <br></br>
                 <br></br>
 
