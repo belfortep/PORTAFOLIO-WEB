@@ -1,6 +1,7 @@
 //------------------------------REQUIRE------------------------------
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const { join } = require('path');
 const { connectDB } = require('./db/db');
 const dotenv = require('dotenv')
