@@ -8,8 +8,18 @@
   width: 100%;
 }
 
-.socialCardGridContainer {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  display: grid;
+@media (min-width: 1024px) {
+  .socialCardGridContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    display: grid;
+  }
+}
+
+@media (max-width: 1024px) {
+  .socialCardGridContainer {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    display: grid;
+  }
 }
