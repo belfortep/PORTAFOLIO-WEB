@@ -6,7 +6,7 @@ import useFetch from '../hooks/useFetch'
 import './socialPage.css'
 export default function SocialPage({ user }) {
 
-    const social = useFetch('http://localhost:4000/api/social');
+    const social = useFetch('https://paolo-belforte.herokuapp.com/api/social');
 
     return (
         <>
