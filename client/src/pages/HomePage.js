@@ -14,11 +14,13 @@ export default function HomePage({ user }) {
     return (
 
         <>
-            <Header />
 
+            <Header />
             <section>
                 <div className='sectionContainer'>
+
                     <div className='sectionGridContainer'>
+
                         <div>
                             <h1 className='sectionTitle'>{user.name}</h1>
                             <p className='sectionText'>{user.bio}</p>

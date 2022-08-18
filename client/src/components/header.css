@@ -1,9 +1,19 @@
-.headerContainer {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+@media (min-width: 1024px) {
+  .headerContainer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 .headerFlexContainer {

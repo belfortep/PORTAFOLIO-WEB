@@ -8,7 +8,7 @@ export default function Header() {
             <nav>
                 <div className='headerContainer'>
                     <div className='headerFlexContainer'>
-                        <Link className='headerHomeLink' to='/'><HomeIcon /></Link>
+                        <Link className='headerHomeLink' to='/'><HomeIcon fontSize='large' /></Link>
                     </div>
                 </div>
             </nav>
