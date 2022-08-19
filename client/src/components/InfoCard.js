@@ -45,7 +45,7 @@ export default function InfoCard({ repos }) {
                     </p>
                     <div className='cardFooter'>
                         <div className='cardFooterImage'>
-                            <img className='cardSmallImage' src={smallImage}></img>
+                            <img className='cardSmallImage' alt={`${repos.language} Logo`} src={smallImage}></img>
                         </div>
                         <span className='cardFooterText'>Última actualización: <Moment date={moment(repos.updated_at)} format='DD/MM/YYYY' /></span>
                     </div>

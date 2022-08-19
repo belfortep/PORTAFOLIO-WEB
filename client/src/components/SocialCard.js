@@ -11,7 +11,7 @@ export default function SocialCard({ socialNetwork }) {
             <div className='socialCardGrid'>
                 <div className='socialCard'>
                     <div className='socialCardImageContainer'>
-                        <img className='socialCardImage' src={smallImage}></img>
+                        <img className='socialCardImage' alt={`${socialNetwork.img} Logo`} src={smallImage}></img>
                     </div>
                     <div className='socialCardInfoContainer'>
                         <div>
